@@ -2,7 +2,9 @@
 A indie terror platform game created in  Global Game Jam 2014
 
 ## High Concept:
-Imagine you living inner in your own mind, creating dangers situations for yourself. That is the plot of "Enter the Shadows" game. Pack yourself do facet your worst nightmares. (PT) Imagine viver dentro da sua propria mente, criando perigos para si mesmo. Essa é a trama do game Enter the Shadows. Prepare-se para os seus piores pesadelos.
+(EN) Imagine you living inner in your own mind, creating dangers situations for yourself. That is the plot of "Enter the Shadows" game. Pack yourself do facet your worst nightmares. 
+
+(PT) Imagine viver dentro da sua propria mente, criando perigos para si mesmo. Essa é a trama do game Enter the Shadows. Prepare-se para os seus piores pesadelos.
 
 **Global Game Jam, game link:** https://globalgamejam.org/2014/games/enter-shadows
 
