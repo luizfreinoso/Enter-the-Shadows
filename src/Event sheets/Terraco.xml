@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Terraco</name>
+    <events>
+        <include>Event sheet 1</include>
+        <event-block sid="5312609177924556">
+            <conditions>
+                <condition behavior="Platform" id="8" name="On moved" sid="3155200106801158" type="Player" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="5073909126592249" type="Player">
+                    <param id="0" name="Animation">&quot;Andar_lanterna_off&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5933291775087972">
+            <conditions>
+                <condition behavior="Platform" id="7" name="On stopped" sid="5931038854853316" type="Player" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="603536164623434" type="Player">
+                    <param id="0" name="Animation">&quot;Default_lanterna_off&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="769003037026866">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="470616172713156" type="System" />
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="5397145552033129" type="Player">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="8710988851861993" type="Player">
+                    <param id="0" name="Animation">&quot;Default_lanterna_off&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Set text" sid="1018585227425145" type="Debud">
+                    <param id="0" name="Text">&quot;What do this terrace!&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6335844104882595">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="9579698193816881" type="Keyboard">
+                    <param id="0" name="Key">89 (Y)</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="4285172772100358">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="6449812137074451" type="System">
+                            <param id="0" name="Variable">pos</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">100</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="7853647326879454" type="Questao">
+                            <param id="0" name="Text">&quot;Not yet.....&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7751658658132364">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="2062103505540258" type="System" />
+                    </conditions>
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="5267757939137319">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="6801940926636423" type="Keyboard">
+                    <param id="0" name="Key">78 (N)</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="2570772809423519">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="525466135273523" type="lanterna">
+                    <param id="0" name="Object">Player</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="4805286076009132" type="Ccomando">
+                    <param id="0" name="Text">&quot;Use the flashlight with key (F)&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="5727005872033569" type="Debud">
+                    <param id="0" name="Text">&quot;What do this terrace!&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3349605879894237">
+            <conditions>
+                <condition id="-22" name="Else" sid="3139649518439064" type="System" />
+                <condition id="-1" name="Compare X" sid="1363049922607556" type="Player">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="X co-ordinate">160</param>
+                </condition>
+                <condition id="-1" name="Compare X" sid="1713375107153532" type="Player">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="X co-ordinate">380</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="1029790554427714" type="Ccomando">
+                    <param id="0" name="Text">&quot;Use arrow keys to walk!&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

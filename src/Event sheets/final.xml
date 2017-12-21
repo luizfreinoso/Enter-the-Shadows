@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>final</name>
+    <events>
+        <variable constant="0" name="rotacacoAux" sid="842730575128064" static="0" type="number">360</variable>
+        <variable constant="0" name="move" sid="135162581553468" static="0" type="number">0</variable>
+        <variable constant="0" name="rotacao" sid="4078021822743007" static="0" type="number">90</variable>
+        <variable constant="0" name="rotate" sid="6970970690154642" static="0" type="number">0</variable>
+        <include>Event sheet 1</include>
+        <event-block sid="5138829880453045">
+            <conditions>
+                <condition behavior="Platform" id="8" name="On moved" sid="4623815025550718" type="Player" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="3661361661136796" type="Player">
+                    <param id="0" name="Animation">&quot;Andar_lanterna_off&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3722178695501183">
+            <conditions>
+                <condition behavior="Platform" id="7" name="On stopped" sid="9465887055460724" type="Player" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="3693557245943326" type="Player">
+                    <param id="0" name="Animation">&quot;Default_lanterna_off&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6170464656227704">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="6395233572926809" type="System" />
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="3581191890115823" type="Player">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="7327379354633928" type="Player">
+                    <param id="0" name="Animation">&quot;Default_lanterna_off&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Set text" sid="6500584702947794" type="Debud">
+                    <param id="0" name="Text">&quot;O que faço neste terraço?!&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2350240704910959">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="6402588626953973" type="Keyboard">
+                    <param id="0" name="Key">89 (Y)</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="2746872820111582">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="6803215305320509" type="System">
+                            <param id="0" name="Variable">key</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="3857381827543194" type="Questao">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="1745616077463135">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="3482327355015644" type="Player">
+                                    <param id="0" name="Comparison">5</param>
+                                    <param id="1" name="X co-ordinate">176</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="ScrollTo" id="0" name="Shake" sid="1752132714526204" type="Player">
+                                    <param id="0" name="Magnitude">20</param>
+                                    <param id="1" name="Duration">0.4</param>
+                                    <param id="2" name="Mode">0</param>
+                                </action>
+                                <action id="4" name="Set speed" sid="2494589454795083" type="Particles">
+                                    <param id="0" name="Speed">1</param>
+                                </action>
+                                <action id="1" name="Set rate" sid="6024249831228831" type="Particles">
+                                    <param id="0" name="Rate">30</param>
+                                </action>
+                                <action behavior="Platform" id="11" name="Set enabled" sid="1116813756105173" type="Player">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="7218969241258098" type="Player">
+                                    <param id="0" name="X">160</param>
+                                    <param id="1" name="Y">Player.Y</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="1356088324650536" type="System">
+                                    <param id="0" name="Seconds">1.0</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="6517449138716931" type="Player">
+                                    <param id="0" name="Animation">&quot;BayBay&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="4776766554766853">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="7258258625554422" type="System" />
+                    </conditions>
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="5677060765249208">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="3479994647270154" type="Keyboard">
+                    <param id="0" name="Key">78 (N)</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="4869483078865534">
+            <conditions>
+                <condition id="4" name="On finished" sid="548422125275821" type="Player">
+                    <param id="0" name="Animation">&quot;BayBay&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="7792090656350002" type="Player">
+                    <param id="0" name="Animation">&quot;Prepara&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="8411190293957753" type="System">
+                    <param id="0" name="Variable">rotate</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="5491889740047555" type="System">
+                    <param id="0" name="Variable">move</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4375217181158048">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="3449071165941422" type="System" />
+                <condition id="-14" name="Compare variable" sid="6129625217689467" type="System">
+                    <param id="0" name="Variable">rotacacoAux</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">275</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="1460663527457225">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="437452841512027" type="System">
+                            <param id="0" name="Variable">rotate</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-18" name="Rotate clockwise" sid="6551705733193095" type="Player">
+                            <param id="0" name="Degrees">-10 * dt</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="9419920557171574" type="System">
+                            <param id="0" name="Variable">rotacacoAux</param>
+                            <param id="1" name="Value">Player.Angle</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="5791616345179463">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="2723702891862888" type="System" />
+                <condition id="-14" name="Compare variable" sid="9857779837668049" type="System">
+                    <param id="0" name="Variable">move</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-17" name="Move forward" sid="389971522896556" type="Player">
+                    <param id="0" name="Distance">- 10 * dt</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8538646664519645">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="4015651151119548" type="Player">
+                    <param id="0" name="Object">FINALMARCCA</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="2258614852600623" type="System">
+                    <param id="0" name="Layout">fim</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
