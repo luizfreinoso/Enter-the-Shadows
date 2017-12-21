@@ -40,10 +40,15 @@ Eder Ferreira - Concept
 
 **Game Stills:**
 
-![GitHub Logo](/other/vinheta.png)
-Format: ![Alt Text](Game title)
+![Game title screen](/other/vinheta.png)
 
- 
+![Game init](/other/screenshoot_1.png)
+
+![Gameplay](/other/screenshoot_2.png)
+
+![Game enemy](/other/screenshoot_3.png)
+
+![Game enemy danger](/other/screenshoot_4.png)
 
 Thanks to reviewers, testers players, friends and guests who helped in any way the project become reality.
 
