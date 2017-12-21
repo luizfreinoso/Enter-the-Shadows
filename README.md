@@ -28,7 +28,7 @@ Enter the 'release' folder and select the version compatible with your computer.
 
 **Credits:** 
 
-**Team:**
+Team:
 
 Luiz Fernando Reinoso - Programmer, Artist and Mastermind
 
