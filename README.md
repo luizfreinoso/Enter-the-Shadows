@@ -8,7 +8,7 @@ A indie terror platform game created in  Global Game Jam 2014
 
 **Global Game Jam, game link:** https://globalgamejam.org/2014/games/enter-shadows
 
-**Jam Site:** Global Game Jam Vitória
+**Jam Site:** [Global Game Jam Vitória](https://globalgamejam.org/2014/jam-sites/global-game-jam-vit%C3%B3ria)
 
 **Jam year:** 2014
 
